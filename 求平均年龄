@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{int number=0;
+ double amount=0;
+ int age=0;
+ scanf("%d",&number);
+ int t=number;
+ while(t>0){
+     scanf("%d",&age);
+     amount+=age;
+     t--;
+ }
+ double result=amount/number;
+ printf("%.2f",result);
+ 
+     
+     
+
+
+
+    return 0;
+}
