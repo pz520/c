@@ -1,0 +1,40 @@
+// 定义Dog类
+public class Dog {
+    private String name;
+    
+    // 构造函数
+    public Dog(String name) {
+        this.name = name;
+    }
+    
+    public void sleep(int minutes) {
+        System.out.println("狗狗睡了 " + minutes + " 分钟，还打呼噜了");
+    }
+    
+    public void eat() {
+        System.out.println(name + "正在吃东西");
+    }
+    
+    public void bark() {
+        System.out.println(name + "在汪汪叫");
+    }
+}
+
+// 主程序类
+public class Main {
+    public static void main(String[] args) {
+        // 创建Dog对象
+        Dog myDog = new Dog("旺财");
+        
+        // 调用各种方法
+        System.out.println("=== 狗狗的一天 ===");
+        myDog.eat();        // 输出：旺财正在吃东西
+        myDog.bark();       // 输出：旺财在汪汪叫
+        myDog.sleep(120);   // 输出：狗狗睡了 120 分钟，还打呼噜了
+        myDog.sleep(45);    // 输出：狗狗睡了 45 分钟，还打呼噜了
+        
+        System.out.println("\n=== 另一只狗狗 ===");
+        Dog otherDog = new Dog("小黑");
+        otherDog.sleep(30); // 输出：狗狗睡了 30 分钟，还打呼噜了
+    }
+}
